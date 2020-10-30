@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/learn">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/websites"
+                    android:title="@string/websites"
+                    android:icon="@drawable/ic_web"/>
+                <item
+                    android:id="@+id/tutorials"
+                    android:title="@string/tutorials"
+                    android:icon="@drawable/ic_book"/>
+                <item
+                    android:id="@+id/favorites"
+                    android:title="@string/favorites"
+                    android:icon="@drawable/ic_favorite"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/more">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/share_the_app"
+                    android:title="@string/share_the_app"
+                    android:icon="@drawable/ic_share"/>
+                <item
+                    android:id="@+id/rate_the_app"
+                    android:title="@string/rate_the_app"
+                    android:icon="@drawable/ic_star"/>
+            </group>
+        </menu>
+    </item>
+</menu>

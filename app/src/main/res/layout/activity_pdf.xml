@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PdfActivity">
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:padding="8dp"
+            android:onClick="onClickBack"
+            android:background="@drawable/buttons_selector"
+            tools:ignore="ContentDescription"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:padding="8dp"
+            android:onClick="onClickHome"
+            android:background="@drawable/buttons_selector"
+            tools:ignore="ContentDescription"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:padding="8dp"
+            android:onClick="onClickNext"
+            android:background="@drawable/buttons_selector"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</LinearLayout>
